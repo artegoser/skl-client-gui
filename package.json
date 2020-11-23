@@ -1,8 +1,8 @@
 {
   "name": "sklclient",
   "productName": "sklclient",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "version": "0.1.0",
+  "description": "Client for SKL coin",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -14,7 +14,7 @@
   "keywords": [],
   "author": {
     "name": "artegoser",
-    "email": "59178854+artegoser@users.noreply.github.com"
+    "email": "artegoser@gmail.com"
   },
   "license": "MIT",
   "config": {
