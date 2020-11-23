@@ -5,6 +5,8 @@ const {
     BrowserWindow
 } = require('electron');
 
+const localStorage = require('./modules/localStorage');
+
 const fs = require('fs');
 
 const SIZE = {
@@ -18,7 +20,7 @@ app.on('ready', () => {
         minHeight: SIZE.y,
 		maxWidth: SIZE.x,
         maxHeight: SIZE.y,
-        backgroundColor: '#404040',
+        //backgroundColor: '#404040',
         webPreferences: {
             devTools: true,
             nodeIntegration: true
@@ -28,5 +30,9 @@ app.on('ready', () => {
     win.webContents.on('dom-ready', () => {
         win.webContents.openDevTools();
     });
-	win.loadURL(`file://${__dirname}/index.html`); //сделать проверку на авторизацию
+	if(localStorage.getItem('autorisation')){
+		win.loadURL(`file://${__dirname}/mainwindow/index.html`);
+	}else{
+		win.loadURL(`file://${__dirname}/autorisation.reg/index.html`);
+	}
 })
