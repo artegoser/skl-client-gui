@@ -15,7 +15,7 @@ app.on("ready", () => {
     minHeight: SIZE.y,
     maxWidth: SIZE.x,
     maxHeight: SIZE.y,
-    //backgroundColor: '#404040',
+    backgroundColor: '#404040',
     webPreferences: {
       devTools: true,
       nodeIntegration: true,

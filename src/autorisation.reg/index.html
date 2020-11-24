@@ -1,7 +1,44 @@
-<p id="text">autorisation</p>
+<p id="text" style="text-align:center; color: white;">autorisation</p>
 <script src="./index.js"></script>
-<input type="button" value="autorisation" maxlength="32", id="aut">
-<input type="button" value="registration" maxlength="32", id="reg">
-<input type="text" placeholder="login" maxlength="32" id="login">
-<input type="text" placeholder="password" maxlength="16" id="password">
-<input type="button" value="войти" maxlength="32", id="sig">
+
+<style>
+    li {
+     list-style-type: none; 
+    }
+    ol {
+     margin-left: 0; 
+     padding-left: 0; 
+    }
+    table{
+    color:white;
+    margin: 0px -80px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    }
+</style>
+
+
+
+<table>
+    <tr>
+        <td><input type="button" value="autorisation" id="aut"></td>
+        <td><input type="button" value="registration" id="reg"></td>
+    </tr>
+</table>
+<ol style="text-align:center;">
+        <li><input type="text" placeholder="login" maxlength="32" id="login"></li>
+        <li><input type="password" placeholder="password" maxlength="16" id="password"></li>
+        <li><input type="button" value="войти" maxlength="32" id="sig"></li>
+</ol>
+<table>
+    <tr>
+        <td><input id="autoin" type="checkbox">Входить автоматически</br></td>
+        
+    </tr>
+    <tr>
+        <td><input id="saveme" type="checkbox">Запомнить меня</br></td>
+    </tr>
+</table>
+
+<p id="warn" style="color:crimson; text-align:center; margin: 5px 5px; "></p>
