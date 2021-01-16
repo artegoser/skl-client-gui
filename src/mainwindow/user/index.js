@@ -21,4 +21,28 @@ window.onload = () => {
         let resp = message.toString();
         $("#balance").html("Balance:"+resp);
     });
+
+    const client2 = dgram.createSocket("udp4");
+    me = {
+      "type":"check",
+      "message":{}
+      }
+    message = Buffer.from(JSON.stringify(me));
+
+    client2.send(message, 9191, "artegoser.tplinkdns.com", (err) => {
+      if (err) {
+        console.log(err);
+        $("#warn").html(err);
+      }
+    });
+    client2.on("message", function (message, remote) {
+      let resp = message.toString();
+      console.log(resp);
+      $("#chaincheck").html("Chain:"+resp);
+      if (resp = "Цепь не была изменена"){
+        $("#chaincheck").css({
+          color: "green",
+        });
+      }
+    });
 };
