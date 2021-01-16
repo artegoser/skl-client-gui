@@ -54,7 +54,7 @@ window.onload = () => {
           localStorage.setItem("login", $("#login").val());
           localStorage.setItem("password", $("#password").val());
         }
-        
+
         localStorage.setItem("login", $("#login").val());
 
         $("#warn").html(resp);
