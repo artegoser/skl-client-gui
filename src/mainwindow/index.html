@@ -18,38 +18,26 @@
         margin: -90px -90px;
     }
 
-    input, button {
-    display: inline-block;
-    font-family: arial,sans-serif;
-    font-size: 11px;
-    color: rgb(205,216,228);
-    text-shadow: 0 -1px rgb(46,53,58);
-    text-decoration: none;
-    user-select: none;
-    line-height: 2em;
-    padding: 1px 1.2em;
-    outline: none;
-    border: 1px solid rgba(33,43,52,1);
-    border-radius: 3px;
-    background: rgb(81,92,102) linear-gradient(rgb(81,92,102), rgb(69,78,87));
-    box-shadow:
-    inset 0 1px rgba(101,114,126,1),
-    inset 0 0 1px rgba(140,150,170,.8),
-    0 1px rgb(83,94,104),
-    0 0 1px rgb(86,96,106);
-    }
-    input, button:active {
-    box-shadow:
-    inset 0 1px 3px rgba(0,10,20,.5),
-    0 1px rgb(83,94,104),
-    0 0 1px rgb(86,96,106);
-    }
+    input.button1 {
+	  display: inline-block;
+	  color: black;
+	  font-weight: 700;
+	  text-decoration: none;
+	  user-select: none;
+	  padding: .5em 2em;
+	  outline: none;
+	  border: 2px solid;
+	  border-radius: 1px;
+	  transition: 0.2s;
+	} 
+	input.button1:hover { background: rgba(255,255,255,.2); }
+	input.button1:active { background: white; }
 </style>
 
 <table>
     <td>
-        <a href="user/index.html"><input type="button" value="user"></a>
-        <a href="transaction/index.html"><input type="button" value="transaction"></a>
-        <a href="cost/index.html"><input type="button" value="SKL cost"></a>
+        <a href="user/index.html"><input type="button" class="button1" value="user"></a>
+        <a href="transaction/index.html"><input type="button" class="button1" value="transaction"></a>
+        <a href="cost/index.html"><input type="button" class="button1" value="SKL cost"></a>
     </td>
 </table>
