@@ -47,15 +47,10 @@ window.onload = () => {
 
         if ($("#autoin").is(":checked")) {
           localStorage.setItem("autorisation", "1");
-          localStorage.setItem("login", $("#login").val());
-          localStorage.setItem("password", $("#password").val());
-        }
-        if ($("#saveme").is(":checked")) {
-          localStorage.setItem("login", $("#login").val());
-          localStorage.setItem("password", $("#password").val());
         }
 
         localStorage.setItem("login", $("#login").val());
+        localStorage.setItem("password", $("#password").val());
 
         $("#warn").html(resp);
         document.location.replace("../mainwindow/index.html");
