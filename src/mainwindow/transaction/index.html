@@ -1,1 +1,45 @@
 <script src="./index.js"></script>
+
+<style>
+    li {
+     list-style-type: none; 
+    }
+    ol {
+     margin-left: 0; 
+     padding-left: 0; 
+    }
+    table{
+    color:white;
+    margin: 0px -90px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    }
+    #tabcheck{
+        margin: -90px -90px;
+    }
+
+    #d, #send {
+	  display: inline-block;
+	  color: black;
+	  font-weight: 700;
+	  text-decoration: none;
+	  user-select: none;
+	  padding: .5em 2em;
+	  outline: none;
+	  border: 2px solid;
+	  border-radius: 1px;
+	  transition: 0.2s;
+	} 
+	#d, #send:hover { background: rgba(255,255,255,.2); }
+	#d, #send:active { background: white; }
+</style>
+
+
+<ol style="text-align:center; margin: 150">
+    <li><input type="text" placeholder="The recipient/Получатель" maxlength="32" id="login"></li>
+    <li><input type="text" placeholder="amount/Сумма отправления" maxlength="32" id="login"></li>
+
+    <input type="button" value="send" id="send">
+    <a href="../index.html"><input type="button" id="d" value="back">
+</ol>
