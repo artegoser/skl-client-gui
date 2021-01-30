@@ -4,6 +4,7 @@ const client = dgram.createSocket("udp4");
 const localStorage = require("../../modules/localStorage");
 
 window.onload = () => {
+  
     let me = {
         type: "autorisation",
         message: { name: localStorage.getItem("login"), password: localStorage.getItem("password") },

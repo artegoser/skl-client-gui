@@ -28,7 +28,7 @@ window.onload = () => {
   $("#sig").on("click", (evt) => {
     me.message.name = $("#login").val();
     me.message.password = $("#password").val();
-
+    
     let message = Buffer.from(JSON.stringify(me));
     client.send(message, 9191, "artegoser.tplinkdns.com", (err) => {
       if (err) {
