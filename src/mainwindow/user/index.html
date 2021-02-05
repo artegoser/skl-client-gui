@@ -33,6 +33,17 @@
 	} 
 	#d:hover { background: rgba(255,255,255,.2); }
 	#d:active { background: white; }
+
+    td {
+        position: fixed;
+        top: -10px;
+    }
+
+    ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 </style>
 
 
@@ -42,5 +53,8 @@
         <p id="balance" style="color: gold">unknown</p>
         <p id="chaincheck" style="color: red">unknown</p>
         <a href="../index.html"><input type="button" id="d"value="back"></a>
+        <div style = "overflow: auto; width:250px; height:250px;" id="transact">
+
+        </div>
     </td>
 </table>
