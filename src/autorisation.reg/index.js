@@ -2,6 +2,7 @@ const dgram = require("dgram");
 const $ = require("Jquery");
 const client = dgram.createSocket("udp4");
 const localStorage = require("../modules/localStorage");
+const options = require("../modules/options");
 
 window.onload = () => {
   //localStorage.removeItem("login")
@@ -30,7 +31,7 @@ window.onload = () => {
     me.message.password = $("#password").val();
     
     let message = Buffer.from(JSON.stringify(me));
-    client.send(message, 9191, "artegoser.tplinkdns.com", (err) => {
+    client.send(message, options.port, options.ip, (err) => {
       if (err) {
         console.log(err);
         $("#warn").html(err);
