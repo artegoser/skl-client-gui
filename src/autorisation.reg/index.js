@@ -1,6 +1,7 @@
 const dgram = require("dgram");
 const $ = require("Jquery");
 const client = dgram.createSocket("udp4");
+const checker = dgram.createSocket("udp4");
 const localStorage = require("../modules/localStorage");
 const options = require("../modules/options");
 
@@ -60,4 +61,30 @@ window.onload = () => {
       }
     });
   });
+
+  let mes = {
+    type: "check",
+    message: ""
+  };
+
+  let check = Buffer.from(JSON.stringify(mes));
+  
+  checker.send(check, options.port, options.ip, (err) => {
+    if (err) {
+      console.log(err);
+      $("#warn").html(err);
+    }
+  });
+
+  checker.on("message", function (check, remote) {
+    console.log(check.toString());
+    let resp = check.toString();
+
+    $("#check").css({
+      color: "green",
+    });
+    $("#check").html(resp);
+    
+  });
+
 };
