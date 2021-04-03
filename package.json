@@ -1,7 +1,7 @@
 {
   "name": "sklclient",
   "productName": "sklclient",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Client for SKL coin",
   "main": "src/index.js",
   "scripts": {

@@ -17,7 +17,7 @@ app.on("ready", () => {
     maxHeight: SIZE.y,
     backgroundColor: '#404040',
     webPreferences: {
-      devTools: true,
+      devTools: false,
       nodeIntegration: true,
     },
   });
