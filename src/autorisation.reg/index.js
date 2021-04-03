@@ -63,7 +63,7 @@ window.onload = () => {
   });
 
   let mes = {
-    type: "check",
+    type: "scheck",
     message: ""
   };
 

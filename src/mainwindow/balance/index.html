@@ -1,0 +1,58 @@
+<script src="./index.js"></script>
+
+<style>
+    li {
+     list-style-type: none; 
+    }
+    ol {
+     margin-left: 0; 
+     padding-left: 0; 
+    }
+    table{
+    color:white;
+    margin: 0px -90px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    }
+    #tabcheck{
+        margin: -90px -90px;
+    }
+
+    input.button1 {
+	  display: inline-block;
+	  color: black;
+	  font-weight: 700;
+	  text-decoration: none;
+	  user-select: none;
+	  padding: .5em 2em;
+	  outline: none;
+	  border: 2px solid;
+	  border-radius: 1px;
+	  transition: 0.2s;
+	} 
+	input.button1:hover { background: rgba(255,255,255,.2); }
+	input.button1:active { background: white; }
+
+    td {
+        position: fixed;
+        top: 0px;
+    }
+
+    ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+</style>
+
+
+<table>
+    <td>
+        <input type="text" placeholder="User" maxlength="32" id="user">
+        <p id="balance" style="color: gold">unknown</p>
+        <input type="button" id="get" class="button1" value="Узнать">
+        <a href="../index.html"><input type="button" class="button1" value="back"></a>
+        <div style = "overflow: auto; width:250px; height:250px;" id="transact"></div>
+    </td>
+</table>
