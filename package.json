@@ -6,10 +6,9 @@
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+	"package": "electron-forge package",
+	"package-mac": "electron-forge package --platform=darwin --arch=x64",
+	"package-linux": "electron-forge package --platform=linux --arch=x64",
   },
   "keywords": [],
   "author": {
