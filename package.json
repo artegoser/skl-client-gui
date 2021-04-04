@@ -7,8 +7,8 @@
   "scripts": {
     "start": "electron-forge start",
 	"package": "electron-forge package",
-	"package-mac": "electron-forge package --platform=darwin --arch=x64",
-	"package-linux": "electron-forge package --platform=linux --arch=x64"
+	"package-linux": "electron-forge package --platform=linux --arch=x64",
+	"make":"electron-forge make"
   },
   "keywords": [],
   "author": {
@@ -29,8 +29,11 @@
         {
           "name": "@electron-forge/maker-zip",
           "platforms": [
-            "darwin"
-          ]
+            "darwin" , "linux"
+          ],
+		  "config": {
+            "name": "sklclient"
+          }
         },
         {
           "name": "@electron-forge/maker-deb",
