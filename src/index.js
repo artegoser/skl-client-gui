@@ -12,7 +12,7 @@ app.on("ready", () => {
     minWidth: SIZE.x,
     minHeight: SIZE.y,
     webPreferences: {
-      devTools: true,
+      devTools: false,
       nodeIntegration: true,
     },
   });
