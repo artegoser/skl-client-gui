@@ -1,4 +1,7 @@
 <script src="./index.js"></script>
+<script src="../../socket.io/socket.io.js"></script>
+<script src="../../jquery-3.6.0.js"></script>
+<link rel="stylesheet" type="text/css" href="../../style.css" />
 
 <style>
     li {
@@ -12,31 +15,21 @@
     color:white;
     margin: 0px -90px; 
     position:relative;
-    top:50%; 
-    left:50%;
+    top:40%; 
+    left:40%;
     }
     #tabcheck{
         margin: -90px -90px;
     }
 
-    input.button1 {
-	  display: inline-block;
-	  color: black;
-	  font-weight: 700;
-	  text-decoration: none;
-	  user-select: none;
-	  padding: .5em 2em;
-	  outline: none;
-	  border: 2px solid;
-	  border-radius: 1px;
-	  transition: 0.2s;
-	} 
-	input.button1:hover { background: rgba(255,255,255,.2); }
-	input.button1:active { background: white; }
-
     td {
         position: fixed;
         top: 0px;
+        font-size: 250%
+    }
+
+    input{
+        font-size: 50%;
     }
 
     ::-webkit-scrollbar {
@@ -53,6 +46,6 @@
         <p id="balance" style="color: gold">unknown</p>
         <input type="button" id="get" class="button1" value="Узнать">
         <a href="../index.html"><input type="button" class="button1" value="back"></a>
-        <div style = "overflow: auto; width:250px; height:250px;" id="transact"></div>
+        <div style = "overflow: auto; width:500px; height:600px;" id="transact"></div>
     </td>
 </table>

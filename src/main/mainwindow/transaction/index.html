@@ -1,4 +1,7 @@
 <script src="./index.js"></script>
+<script src="../../socket.io/socket.io.js"></script>
+<script src="../../jquery-3.6.0.js"></script>
+<link rel="stylesheet" type="text/css" href="../../style.css" />
 
 <style>
     li {
@@ -19,20 +22,10 @@
         margin: -90px -90px;
     }
 
-    #d, #send {
-	  display: inline-block;
-	  color: black;
-	  font-weight: 700;
-	  text-decoration: none;
-	  user-select: none;
-	  padding: .5em 2em;
-	  outline: none;
-	  border: 2px solid;
-	  border-radius: 1px;
-	  transition: 0.2s;
-	} 
-	#d, #send:hover { background: rgba(255,255,255,.2); }
-	#d, #send:active { background: white; }
+    input{
+        font-size: 150%;
+    }
+
 </style>
 
 
@@ -40,7 +33,7 @@
     <li><input type="text" placeholder="The recipient/Получатель" maxlength="32" id="recipient"></li>
     <li><input type="number" placeholder="amount/Сумма отправления" maxlength="32" id="amount"></li>
 
-    <input type="button" value="send" id="send">
-    <p id="info" style="color:white">info</p>
-    <a href="../index.html"><input type="button" id="d" value="back">
+    <input type="button" value="send" class="button1" id="send">
+    <p id="info" style="color:white; font-size: 150%;">info</p>
+    <a href="../index.html"><input type="button" class="button1" value="back">
 </ol>

@@ -1,4 +1,7 @@
 <script src="./index.js"></script>
+<script src="../../socket.io/socket.io.js"></script>
+<script src="../../jquery-3.6.0.js"></script>
+<link rel="stylesheet" type="text/css" href="../../style.css" />
 
 <style>
     li {
@@ -12,38 +15,27 @@
     color:white;
     margin: 0px -90px; 
     position:relative;
-    top:50%; 
-    left:50%;
+    top:40%; 
+    left:40%;
     }
     #tabcheck{
         margin: -90px -90px;
     }
 
-    #d {
-	  display: inline-block;
-	  color: black;
-	  font-weight: 700;
-	  text-decoration: none;
-	  user-select: none;
-	  padding: .5em 2em;
-	  outline: none;
-	  border: 2px solid;
-	  border-radius: 1px;
-	  transition: 0.2s;
-	} 
-	#d:hover { background: rgba(255,255,255,.2); }
-	#d:active { background: white; }
+    input{
+        font-size: 50%;
+    }
 
     td {
         position: fixed;
         top: -10px;
+        font-size: 250%;
     }
 
     ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
 }
-
 </style>
 
 
@@ -52,8 +44,8 @@
         <p id="login" style="color: white">unknown</p>
         <p id="balance" style="color: gold">unknown</p>
         <p id="chaincheck" style="color: red">unknown</p>
-        <a href="../index.html"><input type="button" id="d"value="back"></a>
-        <div style = "overflow: auto; width:250px; height:250px;" id="transact">
+        <a href="../index.html"><input type="button" class="button1" value="back"></a>
+        <div style = "overflow: auto; width:500px; height:600px;" id="transact">
 
         </div>
     </td>

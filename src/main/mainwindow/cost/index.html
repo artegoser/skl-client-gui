@@ -1,0 +1,45 @@
+<script src="./index.js"></script>
+<script src="../../socket.io/socket.io.js"></script>
+<script src="../../jquery-3.6.0.js"></script>
+<link rel="stylesheet" type="text/css" href="../../style.css" />
+<meta charset='utf-8'>
+
+<style>
+    li {
+     list-style-type: none; 
+    }
+    ol {
+     margin-left: 0; 
+     padding-left: 0; 
+    }
+    table{
+    color:white;
+    margin: 0px -90px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    }
+    #tabcheck{
+        margin: -90px -90px;
+    }
+    input, p{
+			font-size: 150%;
+    }
+</style>
+
+<a href="../index.html"><input class="button1" type="button" value="back"></a>
+
+
+
+<ol>
+    <li>
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9ZQVO2YLhM0LR_pLb9tOk7QyxK3sOUJc-PnuM_jmYFjoqRwB2WlDw_soMY2KZftQ0oRMCgJ0tfWun/pubchart?oid=2009208839&amp;format=interactive"></iframe>
+    </li>
+    <li>
+        <input type="number" placeholder="amount" maxlength="32" id="amount">
+        <input type="button" class="button1" value="update" id="update">
+        <p id="allskl" style="color:green"></p>
+        <p id="allrub" style="color:green"></p>
+        <p id="info" style="color:white"></p>
+    </li>
+</ol>

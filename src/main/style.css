@@ -1,0 +1,20 @@
+input.button1 {
+	  display: inline-block;
+	  color: black;
+	  font-weight: 700;
+	  text-decoration: none;
+	  user-select: none;
+	  padding: .5em 2em;
+	  outline: none;
+	  border: 2px solid;
+	  border-radius: 1px;
+	  transition: 0.2s;
+	} 
+input.button1:hover { background: rgba(255,255,255,.2); }
+input.button1:active { background: white; }
+
+html{
+	width: 100%;
+	max-width: 100%;
+	background-color:#404040;
+}

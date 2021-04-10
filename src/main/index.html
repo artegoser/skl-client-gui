@@ -1,42 +1,40 @@
-<p id="text" style="text-align:center; color: white;">autorisation</p>
+<p id="text" style="text-align:center; color: white; font-size:150%">autorisation</p>
 <script src="./index.js"></script>
-
+<script src="./socket.io/socket.io.js"></script>
+<script src="jquery-3.6.0.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
 <style>
     li {
      list-style-type: none; 
     }
     ol {
-     margin-left: 0; 
-     padding-left: 0; 
+     margin-left: 0%; 
+     padding-left: 0%; 
     }
     table{
-    color:white;
-    margin: 0px -130px; 
-    position:relative;
-    top:50%; 
-    left:50%;
+		color:white;
+		position:relative;
+		top:50%; 
+		left:50%;
     }
     #tabcheck{
         margin: -90px -90px;
     }
+	#aut{
+		margin: -0% -95%;
+	}
+	#reg{
+		margin: -0% -95%;
+	}
+	input{
+			font-size: 150%;
+    }
+	#info{
+		position:relative;
+		top:-100px; 
 
-    input.button1 {
-	  display: inline-block;
-	  color: black;
-	  font-weight: 700;
-	  text-decoration: none;
-	  user-select: none;
-	  padding: .5em 2em;
-	  outline: none;
-	  border: 2px solid;
-	  border-radius: 1px;
-	  transition: 0.2s;
-	} 
-	input.button1:hover { background: rgba(255,255,255,.2); }
-	input.button1:active { background: white; }
+	}
 	html{
-        width: 100%;
-        max-width: 100%;
         overflow: hidden;
     }
 </style>
@@ -61,5 +59,7 @@
     </tr>
 </table>
 
-<p id="warn" style="color:crimson; text-align:center; margin: 5px 5px; "></p>
-<p id="check" style="color:crimson; text-align:center; margin: 5px 5px; ">Server offline!</p>
+<div id="info">
+<p id="warn" style="color:crimson; text-align:center; font-size:150%"></p>
+<p id="check" style="color:crimson; text-align:center; font-size:150% ">Server offline!</p>
+</div>
