@@ -1,20 +1,17 @@
 # skl-client-gui
 Клиент для SKl coin
 
-## Окно регистрации и авторизации
-![auto reg](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/autoreg.jpg?raw=true "Окно регистрации и авторизации")
+Интерфейс интуитивно понятный, поэтому расскажу не самое очевидное
 
-## Главное окно
-![main](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/main.png?raw=true "Главное окно")
+## В окне поиска пользователей можно нажать на пользователя, и тебе покажет его баланс.
 
-## User
-![User](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/user.png?raw=true "Пользователь")
+Всё. Можете смотреть скриншоты
 
-## Transactions
-![Transactions](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/transactions.png?raw=true "Транзакции")
-
-## Cost
-![Cost](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/cost.png?raw=true "Цена SKL")
-
-## Balance
-![Cost](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/balance.png?raw=true "Баланс любого пользователя")
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/autoreg.png?raw=true)
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/user.png?raw=true)
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/transactions.png?raw=true)
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/cost.png?raw=true)
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/users.png?raw=true)
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/userssearch.png?raw=true)
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/balance.png?raw=true)
+![](https://github.com/artegoser/artegoser.github.io/blob/master/gossk/sklclient/chat.png?raw=true)
