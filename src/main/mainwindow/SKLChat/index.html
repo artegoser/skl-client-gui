@@ -1,0 +1,115 @@
+<script src="./index.js"></script>
+<script src="../../socket.io/socket.io.js"></script>
+<script src="../../jquery-3.6.0.js"></script>
+<link rel="stylesheet" type="text/css" href="../../style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../../toastr/toastr.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../toastr/toastr.min.css" />
+
+<style>
+    @media (min-width: 768px){
+        #chatmenu{
+            color:white;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+
+        #chat{
+            text-align: center;
+            width: 500px;
+            height: 600px;
+            transition: 0.5s;
+        }
+        
+        #message{
+            width: 350px;
+            height: 50px;
+            resize: none;
+        }
+
+        #delete{
+            font-size: 65%;
+        }
+
+        img{
+            max-width: 420px;
+            margin: 10px;
+        }
+
+    }
+
+    @media (max-width: 767px){
+        select, textarea{
+            font-size: 140%;
+            max-width: 767px;
+        }
+
+        #chat{
+            text-align: center;
+            max-width: 767px;
+            height: 550px;
+            transition: 0.5s;
+        }
+
+        #delete{
+            font-size: 60%;
+        }
+
+        img{
+            max-width: 250px;
+            margin: 10px;
+        }
+    }
+
+    input{
+            font-size: 90%;
+    }
+
+    
+
+    p{
+        color:white;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        word-break:break-all;
+    }
+
+</style>
+<a href="../index.html"><input type="button" class="button1" value="Назад"></a>
+
+<div id="chatmenu">
+    <table>
+        <tr>
+            <td>
+                <select id="room">
+                    <option>social</option>
+                    <option>GOSKK</option>
+                </select>
+                <input type="checkbox" id="scroll" name="scroll" checked>
+                <label for="scroll" style="color:white">Скролл</label>
+                <input type="checkbox" id="notify" name="notification">
+                <label for="scroll" style="color:white">Уведомления</label>
+                <input type="button" id="delete" class="button1" value="Удалить последнее сообщение">
+            </td>
+        </tr>
+    </table>
+              
+    <div style = "overflow: auto; overflow-x:hidden; " id="chat">
+        <div id="block"></div>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <textarea placeholder="Сообщение" maxlength="300" id="message" autocomplete="off"></textarea>
+            </td>
+            <td>
+                <input type="button" id="send" class="button1" value="Отправить">
+            </td>
+        </tr>
+    </table>
+</div>

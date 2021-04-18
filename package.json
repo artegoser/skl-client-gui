@@ -1,14 +1,14 @@
 {
   "name": "sklclient",
   "productName": "sklclient",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "description": "Client for SKL coin",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
-	"package": "electron-forge package",
-	"package-linux": "electron-forge package --platform=linux --arch=x64",
-	"make":"electron-forge make"
+    "package": "electron-forge package",
+    "package-linux": "electron-forge package --platform=linux --arch=x64",
+    "make": "electron-forge make"
   },
   "keywords": [],
   "author": {
@@ -29,9 +29,10 @@
         {
           "name": "@electron-forge/maker-zip",
           "platforms": [
-            "darwin" , "linux"
+            "darwin",
+            "linux"
           ],
-		  "config": {
+          "config": {
             "name": "sklclient"
           }
         },
@@ -50,7 +51,8 @@
     "crypto": "^1.0.1",
     "electron-squirrel-startup": "^1.0.0",
     "fs": "0.0.1-security",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "toastr": "^2.1.4"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",

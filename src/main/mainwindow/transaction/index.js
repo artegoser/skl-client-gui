@@ -1,5 +1,6 @@
 const localStorage = require("../../../modules/localStorage");
 const $ = require("Jquery");
+
 window.onload = () => {
   const socket = io("http://artegoser.tplinkdns.com:9191");
   socket.emit("autorisation", {name:localStorage.getItem("login"), password:localStorage.getItem("password")});

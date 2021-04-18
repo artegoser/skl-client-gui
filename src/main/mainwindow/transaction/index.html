@@ -2,24 +2,17 @@
 <script src="../../socket.io/socket.io.js"></script>
 <script src="../../jquery-3.6.0.js"></script>
 <link rel="stylesheet" type="text/css" href="../../style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+    
     li {
      list-style-type: none; 
     }
+    
     ol {
-     margin-left: 0; 
-     padding-left: 0; 
-    }
-    table{
-    color:white;
-    margin: 0px -90px; 
-    position:relative;
-    top:50%; 
-    left:50%;
-    }
-    #tabcheck{
-        margin: -90px -90px;
+        margin-left: 0; 
+        padding-left: 0; 
     }
 
     input{
@@ -29,11 +22,11 @@
 </style>
 
 
-<ol style="text-align:center; margin: 150">
-    <li><input type="text" placeholder="The recipient/Получатель" maxlength="32" id="recipient"></li>
-    <li><input type="number" placeholder="amount/Сумма отправления" maxlength="32" id="amount"></li>
+<ol style="text-align:center;">
+    <li><input type="text" placeholder="The recipient/Получатель" maxlength="32" id="recipient" autocomplete="off"></li>
+    <li><input type="number" placeholder="amount/Количество" maxlength="32" id="amount"></li>
 
-    <input type="button" value="send" class="button1" id="send">
+    <input type="button" value="Отправить" class="button1" id="send">
     <p id="info" style="color:white; font-size: 150%;">info</p>
-    <a href="../index.html"><input type="button" class="button1" value="back">
+    <a href="../index.html"><input type="button" class="button1" value="Назад"></a>
 </ol>

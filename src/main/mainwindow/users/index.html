@@ -14,7 +14,7 @@
             font-size: 250%;
             top:50%;
         }
-        #transact{
+        #users{
             width:500px; 
             height:600px;
         }
@@ -27,7 +27,7 @@
         #bal{
             top:45%;
         }
-        #transact{
+        #users{
             width:350px; 
             height:495px;
         }
@@ -46,13 +46,20 @@
         margin:0px;
     }
 
+    a{
+        text-decoration:none;
+        color:white;
+    }
+    #light{
+        color:cyan;
+    }
+
 </style>
 
 
 <div id="bal">
         <a href="../index.html"><input type="button" class="button1" value="Назад"></a></br>
         <input type="text" placeholder="Пользователь" maxlength="32" id="user" autocomplete="off">
-        <p id="balance" style="color: gold"></p>
-        <input type="button" id="get" class="button1" value="Узнать">
-        <div style = "overflow: auto;" id="transact"></div>
+        <input type="button" id="search" class="button1" value="Найти">
+        <div style = "overflow: auto;" id="users"></div>
 </div>

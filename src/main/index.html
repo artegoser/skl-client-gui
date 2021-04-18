@@ -1,64 +1,75 @@
-<p id="text" style="text-align:center; color: white; font-size:150%">autorisation</p>
 <script src="./index.js"></script>
 <script src="./socket.io/socket.io.js"></script>
 <script src="jquery-3.6.0.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<style>
-    li {
-     list-style-type: none; 
-    }
-    ol {
-     margin-left: 0%; 
-     padding-left: 0%; 
-    }
-    table{
-		color:white;
-		position:relative;
-		top:50%; 
-		left:50%;
-    }
-    #tabcheck{
-        margin: -90px -90px;
-    }
-	#aut{
-		margin: -0% -95%;
-	}
-	#reg{
-		margin: -0% -95%;
-	}
-	input{
-			font-size: 150%;
-    }
-	#info{
-		position:relative;
-		top:-100px; 
+<link rel="stylesheet" type="text/css" href="./toastr/toastr.min.css" />
+<script src="./toastr/toastr.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	}
-	html{
+<style>
+    @media (min-width: 768px){
+        input{
+            font-size: 150%;
+        }
+        table{
+            top: 70%
+        }
+    }
+
+    @media (max-width: 767px){
+        input{
+            font-size: 110%;
+        }
+        table{
+            top: 35%
+        }
+    }
+
+    li {
+        list-style-type: none; 
+    }
+
+    table{
+        color:white;
+        
+    }
+
+    table, #warn, #form, #text{
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+
+    
+    #warn{
+        position: absolute;
+        top:40%;
+    }
+
+    #form{
+        top:20%;
+        padding:0px;
+    }
+
+    html{
         overflow: hidden;
     }
 </style>
 
 
-
+<p id="text" style="color: white; font-size:150%">Авторизация</p>
 <table>
     <tr>
-        <td><input type="button" class="button1" value="autorisation" id="aut"></td>
-        <td><input type="button" class="button1" value="registration" id="reg"></td>
-    </tr>
-</table>
-<ol style="text-align:center;">
-        <li><input type="text" placeholder="login" maxlength="32" id="login"></li>
-        <li><input type="password" placeholder="password" maxlength="16" id="password"></li>
-        <li><input type="button" class="button1" value="войти" maxlength="32" id="sig"></li>
-</ol>
-<table id="tabcheck">
-    <tr>
-        <td></td>
+        <td><input type="button" class="button1" value="Авторизация" id="aut"></td>
+        <td><input type="button" class="button1" value="Регистрация" id="reg"></td>
     </tr>
 </table>
 
-<div id="info">
+    <ol style="text-align:center;" id="form">
+            <li><input type="text" placeholder="Логин" maxlength="32" id="login" autocomplete="off"></li>
+            <li><input type="password" placeholder="Пароль" maxlength="16" id="password" autocomplete="off"></li>
+            <li><input type="button" class="button1" value="войти" maxlength="32" id="sig"></li>
+    </ol>
+
 <p id="warn" style="color:crimson; text-align:center; font-size:150%"></p>
-<p id="check" style="color:crimson; text-align:center; font-size:150% ">Server offline!</p>
-</div>
