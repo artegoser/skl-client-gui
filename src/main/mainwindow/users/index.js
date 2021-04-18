@@ -8,7 +8,7 @@ window.onload = () => {
   socket.on("users", data=>{
     users = data
     for(let i = 0; i<users.length; i++){
-      $("#users").append(`<a href="http://artegoser.tplinkdns.com:9191/mainwindow/balance/index.html?user=${users[i]}"><div id="block">${users[i]}</div></a>`);
+      $("#users").append(`<a href="../balance/index.html?user=${users[i]}"><div id="block">${users[i]}</div></a>`);
     }
   })
 
@@ -16,7 +16,7 @@ window.onload = () => {
     $("#users").html("");
     users.forEach(i=>{
       if (i.search($("#user").val()) != -1) {
-        $("#users").append(`<a href="http://artegoser.tplinkdns.com:9191/mainwindow/balance/index.html?user=${i}"><div id="block">${i.replace($("#user").val(), `<span id="light">${$("#user").val()}</span>`)}</div></a>`);
+        $("#users").append(`<a href="../balance/index.html?user=${i}"><div id="block">${i.replace($("#user").val(), `<span id="light">${$("#user").val()}</span>`)}</div></a>`);
       }
     });
   });
